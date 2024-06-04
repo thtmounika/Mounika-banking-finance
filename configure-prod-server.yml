@@ -11,8 +11,8 @@
   - name: start docker service
     command: sudo systemctl start docker
   
-  - name: stop and remove existing insure-me container
-    command: sudo docker rm -f  banking-finance
+  - name: stop and remove existing banking container
+    command: sudo docker rm -f  mentorbank
     
   - name: deploy banking application
     command: sudo docker run -itd -p 8081:8081 --name mentorbank thtmounika/mentorbank:1
