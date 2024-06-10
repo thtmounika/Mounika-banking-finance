@@ -113,7 +113,7 @@ resource "aws_instance" "prod-server" {
   ami = "ami-0f58b397bc5c1f2e8"
   instance_type = "t2.micro"
   availability_zone = "ap-south-1b"
-  key_name = "terraform"
+  key_name = "project"
   network_interface {
     device_index = 0
     network_interface_id = aws_network_interface.mounika-ni.id
